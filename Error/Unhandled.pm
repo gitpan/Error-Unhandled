@@ -3,8 +3,8 @@
 # Error::Unhandled - a Module for letting Errors do their own handling
 #
 # Author: Toby Everett
-# Revision: 1.01
-# Last Change: Released
+# Revision: 1.02
+# Last Change: Fixed Makefile.pl bug
 ##########################################################################
 # Copyright 1995 Graham Barr, 1999 Toby Everett.  All rights reserved.
 #
@@ -28,7 +28,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 
 @ISA = qw(Error);
 
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 sub throw {
   my $self = shift;
